@@ -21,7 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
 
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        backgroundColor: Theme.of(context).colorScheme.primary,
         title: const Text('Your ToDo list'),
       ),
       body: RefreshIndicator(
