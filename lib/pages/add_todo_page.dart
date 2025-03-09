@@ -1,9 +1,9 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:todo/load_items.dart';
 import 'package:todo/pages/home_page.dart';
+
 class AddTodoPage extends StatefulWidget {
   final LoadItems? todo;
   const AddTodoPage({super.key,
@@ -150,7 +150,7 @@ class _AddTodoPageState extends State<AddTodoPage> {
   }
 
   void navigateToPage() {
-    Navigator.pop(context);
+    Navigator.pushAndRemoveUntil(context,MaterialPageRoute(builder: (context)=>const MyHomePage()),(route) => false,);
   }
 
 }
